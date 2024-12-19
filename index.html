@@ -3,16 +3,26 @@
 	<head>
 		<title>Página Personal Nathazha Bernales Aragon</title>
 		
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+
 		<style>
 h1{
 	color:#404a57;
 	font-size:50px;
-	font-family:Calibri;
+	font-family: "Anton", serif;
+	font-weight: 400;
+	font-style: normal;
 }	
 h2{
+	margin:0 0 0 20px;
 	color:#404a57;
 	font-size:30px;
-	font-family:Calibri;
+	font-family: "PT Sans Narrow", serif;
+	font-weight: 700;
+	font-style: normal;
 }	
 p{
 	color:#677383;
@@ -23,7 +33,73 @@ li{
 	color:#404a57;
 	font-size:20px;
 	font-family:Calibri;
-}			
+}
+a{
+	font-style:none;
+	color:#404a57;
+	text-decoration:none;
+}
+
+body{
+	margin:0;
+}
+header{
+	padding:10px 0 10px 20px;
+	background:#404a57;
+}
+header h1{
+	margin:0;
+	font-size:30px;
+	color:#ffffff;
+	font-family: "PT Sans Narrow", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+header li{
+	color:#ffffff;
+}
+header a{
+	font-style:none;
+	color:#ffffff;
+	text-decoration:none;
+}
+
+main h1{
+	margin:0;
+}
+.article_1{
+	padding-top:30px;
+	text-align:center;
+	background-image:url("fondominecraft.jpg");
+}
+.article_1 p{
+	margin:0;
+	text-align:center;
+	color:#404a57;
+	font-size:25px;
+	font-family: "PT Sans Narrow", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+.imagen{
+	background: rgb(64,74,87);
+	background: linear-gradient(180deg, rgba(64,74,87,0) 0%, rgba(224,221,232,1) 100%);
+}
+
+footer{
+	padding:20px;
+	background: rgb(64,74,87);
+	background: linear-gradient(180deg, rgba(64,74,87,1) 0%, rgba(128,122,148,1) 100%);
+}
+footer a{
+	font-style:none;
+	color:#ffffff;
+	text-decoration:none;
+}
+footer p{
+	color:#ffffff;
+}
+
 		</style>
 	</head>
 	
@@ -32,9 +108,8 @@ li{
 		<h1>Mi página personal</h1>
 		
 	<nav>
-		<h2>Navegación</h2>
 		<ul>
-			<li><a href="portada.html">Página principal</a></li>
+			<li><a href="index.html">Página principal</a></li>
 			<li><a href="cv.html">CV</a></li>
 			<li><a href="aficiones.html">Aficiones</a></li>
 			<li><a href="juego.html">Juego</a></li>
@@ -44,31 +119,33 @@ li{
 	</header>
 	
 	<main>
-		<h1>Nathazha Bernales</h1>
+	<article class="article_1">
+		<h1>NATHAZHA BERNALES</h1>
 		<p>Estudiante de desarrollo de videojuegos</p>
-		
-		<p><img a src="fotoperfil.png"/></p>
-		
+		<p class="imagen"><img a src="fotoperfil.png"/></p>
+	</article>
+	
+	<article>
 		<h2>Bienvenido a mi página, conóceme:</h2>
 		<ul>
-			<li><strong><a href="CV.html">CV</a></strong>
+			<li><strong><a href="cv.html">CV</a></strong>
 				<p>¡Mira mi currículum!</p></li>
 				
-			<li><strong><a href="Aficiones.html">AFICIONES</a></strong>
+			<li><strong><a href="aficiones.html">AFICIONES</a></strong>
 				<p>¡Conoce mis gustos!</p></li>
 				
-			<li><strong><a href="Juego.html">JUEGO</a></strong>
+			<li><strong><a href="juego.html">JUEGO</a></strong>
 				<p>¡Mira mi proyecto!</p></li>
 
-			<li><strong><a href="Contacto.html">CONTACTO</a></strong>
+			<li><strong><a href="contacto.html">CONTACTO</a></strong>
 				<p>¿Quieres saber más? ¡Contáctame!</p></li>
 		</ul>
+	</article>
 	</main>
 	
 	<footer>
-		<h2>Navegación</h2>
 		<ul>
-			<li><a href="portada.html">Página principal</a></li>
+			<li><a href="index.html">Página principal</a></li>
 			<li><a href="cv.html">CV</a></li>
 			<li><a href="aficiones.html">Aficiones</a></li>
 			<li><a href="juego.html">Juego</a></li>
