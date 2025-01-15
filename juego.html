@@ -3,18 +3,49 @@
 	<head>
 		<title>Juego con Javascript</title>
 		
-		<style>
-h1{
-	color:#404a57;
-	font-size:50px;
-	font-family:Calibri;
-}	
-li{
-	color:#404a57;
-	font-size:20px;
-	font-family:Calibri;
-}			
-		</style>
+	<script>
+let num_max = 100;
+let num_min = 1;
+	
+let numero_random = Math.floor(Math.random()*num_max)+num_min;
+
+console.log("El número a adivinar es: "+numero_random);
+
+let info = "Introduce un número entre el 1 y el 100 para adivinar el número";
+	
+function check_number ()
+{
+	//console.log("Número!!!");
+	
+	let valor = document.getElementById("juego_numero").value;
+	
+	let resultado = document.getElementById("resultado");
+	
+	if (valor < num_min) {
+	resultado.value = "El número debe ser 1 o mayor";
+	return;
+	}
+	else if (valor > num_max) {
+	resultado.value = "El número debe ser 100 o menor";
+	return;
+	}
+	
+	let text = " ";
+	
+	if (valor > numero_random) {
+	text = "El número a adivinar es menor a "+valor;
+	}
+	else if (valor < numero_random){
+	text = "El número a adivinar es mayor a "+valor;
+	}
+	else {
+	text = "Has acertado!!";
+	}
+	
+	console.log(text);
+	resultado.value = text;
+}
+	</script>
 	</head>
 	
 	<body>
@@ -32,7 +63,14 @@ li{
 	</header>
 	
 	<main>
-		<h1>Juego</h1>
+		<h2>Mi juego</h2>
+		<form>
+			<h3>Adivina el número</h3>
+			<p id="info">Introduce un número entre el 1 y el 100 para adivinar el número</p>
+			<p>Número: <input type="number" id="juego_numero" name="numero"/></p>
+			<p><output id="resultado">Introduce el número en el campo de texto</output></p>
+			<p><input type="button" value="Adivina" onClick="check_number();"/></p>
+		</form>
 	</main>
 	
 	<footer>
@@ -47,5 +85,10 @@ li{
 		
 		<p>Copyright(C) 2024-2025</p>
 	</footer>
+	
+	<script>
+document.getElementById("info").innerHTML = info;
+	</script>
+	
 	</body>
 </html>
