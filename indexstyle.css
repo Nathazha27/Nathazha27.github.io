@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Sour Gummy", serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+body{
+	background-color: #deddf2;
+}
+
+header{
+	background-color: #212036;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #deddf2;
+}
+	
+.menu {
+	display: flex;
+	justify-content: space-between;
+	color: #deddf2;
+	padding: 10px 30px 10px 30px;
+}
+
+header h1{
+	font-family: "Galindo", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 30px;
+	margin-top: 13px;
+}
+
+header ul{
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+header ul li{
+	padding: 10px;
+	margin-left: 20px;
+	transition: .3s;
+}
+
+header ul li:hover{
+	border: 2px solid #deddf2;
+	border-radius: 15px;
+	font-size: 14px;
+}
+
+img{
+	border: 2px solid #ffffff;
+	border-radius: 150px;
+	margin-top: 20px;
+}
+
+.section_1{
+	padding-top:30px;
+	text-align:center;
+	background-image:url("fondominecraft.jpg");
+}
+
+.section_1 p{
+	margin:0;
+	text-align:center;
+	color:#404a57;
+	font-size:25px;	
+}
+
+.section_1 h1{
+	font-family: "Galindo", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 60px;
+	margin: 50px 200px 10px 200px;
+	color: #212036;
+}
+
+.imagen{
+	background: rgb(222,221,242);
+	background: linear-gradient(0deg, rgba(222,221,242,1) 0%, rgba(222,221,242,0) 100%);
+}
+
+.presentacion{
+	text-align: center;
+	background-color:#f9f7ff;
+	margin: 30px 100px 100px 100px;
+	padding: 30px 0 30px 0;
+	border: 2px solid #9491c8;
+	border-radius: 20px;
+	box-shadow: 8px 8px #9491c8;
+}
+
+.presentacion h2{
+	font-family: "Galindo", serif;
+	color: #ffffff;
+	margin-bottom: 20px;
+	padding: 10px;
+	background: rgb(148,145,200);
+	background: linear-gradient(100deg, rgba(148,145,200,1) 0%, rgba(90,87,133,1) 20%, rgba(70,68,109,1) 50%, rgba(90,87,133,1) 80%, rgba(148,145,200,1) 100%);
+}
+
+.presentacion p{
+	margin: 0 50px 0 50px;
+	color: #3f3361;
+	font-size: 18px;
+}
+
+.enlaces{
+	margin-bottom: 70px;
+	border-top: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+}
+
+.enlaces ul{
+	display: flex;
+	margin: 20px 0 20px 0;
+}
+
+.enlaces li{
+	text-align: center;
+	margin: 25px;
+	padding: 20px 20px 20px 20px;
+	background-color: #212036;
+	color: #deddf2;
+	border: 2px solid #9491c8;
+	border-radius: 30px;
+	box-shadow: 8px 8px #9491c8;
+}
+
+.enlaces a{
+	font-family: "Galindo", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 20px;
+	transition: .2s;
+}
+
+.enlaces a:hover{
+	border-bottom: 2px solid #9491c8;
+	font-size: 25px;
+}
+
+.enlaces p{
+	margin: 40px 10px 40px 10px;
+}
+
+footer{
+	background-color: #212036;
+	padding: 50px;
+	text-align: center;
+	color:#9491c8; 
+}
+
+footer a{
+	color:#9491c8; 
+}
+
+footer nav{
+	margin-bottom: 30px;
+}
