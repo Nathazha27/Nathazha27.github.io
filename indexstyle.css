@@ -92,7 +92,7 @@ img{
 .presentacion{
 	text-align: center;
 	background-color:#f9f7ff;
-	margin: 30px 100px 100px 100px;
+	margin: 100px;
 	padding: 30px 0 30px 0;
 	border: 2px solid #9491c8;
 	border-radius: 20px;
@@ -109,15 +109,15 @@ img{
 }
 
 .presentacion p{
-	margin: 0 50px 0 50px;
+	margin: 0 100px 0 100px;
 	color: #3f3361;
 	font-size: 18px;
 }
 
 .enlaces{
 	margin-bottom: 70px;
-	border-top: 2px solid #ffffff;
-	border-bottom: 2px solid #ffffff;
+	border-top: 4px solid #ffffff;
+	border-bottom: 4px solid #ffffff;
 }
 
 .enlaces ul{
@@ -127,7 +127,7 @@ img{
 
 .enlaces li{
 	text-align: center;
-	margin: 25px;
+	margin: 35px;
 	padding: 20px 20px 20px 20px;
 	background-color: #212036;
 	color: #deddf2;
@@ -140,13 +140,13 @@ img{
 	font-family: "Galindo", serif;
 	font-weight: 500;
 	font-style: normal;
-	font-size: 20px;
+	font-size: 25px;
 	transition: .2s;
 }
 
 .enlaces a:hover{
 	border-bottom: 2px solid #9491c8;
-	font-size: 25px;
+	font-size: 30px;
 }
 
 .enlaces p{
@@ -158,10 +158,15 @@ footer{
 	padding: 50px;
 	text-align: center;
 	color:#9491c8; 
+	border-top: 30px solid #9491c8; 
 }
 
 footer a{
 	color:#9491c8; 
+}
+
+footer a:hover{
+	color:#ffffff;
 }
 
 footer nav{
