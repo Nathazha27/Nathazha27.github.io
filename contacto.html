@@ -35,15 +35,15 @@
 			<h1>CONTACTA CONMIGO</h1>
 		<article>
 		<ul>
-			<li><p>Nombre*: <input type="text" id="contacto_name" name="nombre" placeholder="Escribe aquí tu nombre"/></p></li>
+			<li><p>Nombre*: <input type="text" id="contacto_name" name="nombre" placeholder="Escribe aquí tu nombre" required/></p></li>
 			<li><p>Fecha de nacimiento: <input type="date" id="contacto_birth" name="fecha_nac"/></p></li>
-			<li><p>e-mail*: <input type="email" id="contacto_email" name="email" placeholder="ejemplo@gmail.com"/>/></p></li>
-			<li><p>Teléfono móvil: <input type="number" id="contacto_number" name="numero" placeholder="+34 1928371287"/>/></p></li>
+			<li><p>e-mail*: <input type="email" id="contacto_email" name="email" placeholder="ejemplo@gmail.com" required/></p></li>
+			<li><p>Teléfono móvil: <input type="tel" id="contacto_number" name="numero" placeholder="+34 1928371287"/></p></li>
 			<li><p>Color favorito: <input type="color" id="contacto_color" name="color"/></p></li>
 			<li><p>Dime qué quieres saber:</p>
-			<p><textarea></textarea></p></li>
-			<li><p><input type="button" value="Enviar formulario" onClick="check_*();"/></p></li>
+			<p><textarea id="contacto_mensaje" name="mensaje" required></textarea></p></li>
 		</ul>
+			<p><input type="submit" value="Enviar"/></p>
 		</article>
 		</form>
 	</section>
