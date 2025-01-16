@@ -7,7 +7,7 @@
 }
 
 body{
-	background-color: #deddf2;
+	background-color: #ffffff;
 }
 
 header{
@@ -56,13 +56,51 @@ header ul li:hover{
 	font-size: 14px;
 }
 
+main{
+	background-image:url("fondocontacto.jpg");
+}
+
+.formulario	{
+	display:flex;
+	justify-content:center;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,0.7) 0%, rgba(2,0,36,0.7) 100%);
+}
+
+.formulario form{
+	margin: 50px 0 50px 0;
+	background-color:#deddf2;
+	border: 2px solid #9491c8;
+	border-radius: 30px;
+}
+
+.formulario h1{
+	color: #deddf2;
+	margin-top: 30px;
+	padding: 10px;
+	font-family: "Galindo", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 25px;
+	text-align: center;
+	background: rgb(148,145,200);
+	background: linear-gradient(100deg, rgba(148,145,200,1) 0%, rgba(90,87,133,1) 20%, rgba(70,68,109,1) 50%, rgba(90,87,133,1) 80%, rgba(148,145,200,1) 100%);
+}
+
+.formulario article{
+	padding: 30px;
+}
+
+.formulario p{
+	margin: 20px;
+	color:#404a57;
+}
 
 footer{
 	background-color: #212036;
 	padding: 50px;
 	text-align: center;
 	color:#9491c8; 
-	border-top: 30px solid #9491c8; 
 }
 
 footer a{
