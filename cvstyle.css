@@ -56,7 +56,18 @@ header ul li:hover{
 	font-size: 14px;
 }
 
+.cv{
+	display:flex;
+	justify-content:center;
+}
 
+.parte1 article{
+	margin:20px;
+}
+
+.parte2 article{  
+	margin:20px;
+}
 
 footer{
 	background-color: #212036;

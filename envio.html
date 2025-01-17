@@ -9,9 +9,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	
 	<link rel="stylesheet" href="contactostyle.css">
-	
-	<script src="contact.js"></script>
-	
 	</head>
 	
 	<body>
@@ -33,21 +30,11 @@
 	</header>
 	
 	<main>
-	<section class="formulario">
-		<form method="POST" action="envio.html" id="form_contacto" onSubmit="procesa_envio(event)">
+	<section class="formulario" action="envio.html">
+		<form method="POST" action="">
 			<h1>CONTACTA CONMIGO</h1>
 		<article>
-		<ul>
-			<li><p><label for="contacto_name">Nombre*</label>: <input type="text" id="contacto_name" name="nombre" placeholder="Escribe aquí tu nombre" required/></p></li>
-			<li><p><label for="contacto_birth">Fecha de nacimiento</label>: <input type="date" id="contacto_birth" name="fecha_nac"/></p></li>
-			<li><p><label for="contacto_email">e-mail*</label>: <input type="email" id="contacto_email" name="email" placeholder="ejemplo@gmail.com" required/></p></li>
-			<li><p><label for="contacto_number">Teléfono móvil</label>: <input type="tel" id="contacto_number" name="numero" placeholder="+34 1928371287"/></p></li>
-			<li><p><label for="contacto_color">Color favorito</label>: <input type="color" id="contacto_color" name="color"/></p></li>
-			<li><p><label for="seleccion">Género</label>: <select id="contacto_select" name="genero"> <option value="1">Masculino</option> <option value="2">Femenino</option> <option value="3">Prefiero no decirlo</option> </select></p>
-			<li><p><label for="contacto_mensaje">Dime qué quieres*</label>:<textarea id="contacto_mensaje" name="mensaje" required></textarea></p></li>
-		</ul>
-			<p><output id="salida">Los campos con * son obligatorios</output></p>
-			<p><input type="submit" value="¡Contacta!"/></p>
+			<p>¡¡Gracias por contactar conmigo!!</p>
 		</article>
 		</form>
 	</section>
@@ -72,10 +59,5 @@
 		
 		<p>Copyright(C) 2024-2025</p>
 	</footer>
-	
-document.getElementById("salida").innerHTML = salida;	
-document.getElementById("contacto_name").innerHTML = contacto_name;
-
-	
 	</body>
 </html>
