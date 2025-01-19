@@ -6,12 +6,8 @@
 	font-style: normal;
 }
 
-body{
-	background-color: #deddf2;
-}
-
 header{
-	background-color: #212036;
+	background-color: #4e664c;
 }
 
 ul{
@@ -20,13 +16,13 @@ ul{
 
 a{
 	text-decoration: none;
-	color: #deddf2;
+	color: #ffffff;
 }
 	
 .menu {
 	display: flex;
 	justify-content: space-between;
-	color: #deddf2;
+	color: #ffffff;
 	padding: 10px 30px 10px 30px;
 }
 
@@ -51,22 +47,50 @@ header ul li{
 }
 
 header ul li:hover{
-	border: 2px solid #deddf2;
+	border: 2px solid #c1e6bd;
 	border-radius: 15px;
 	font-size: 14px;
 }
 
+main{
+	background-image:url("navidad1.jpg");
+}
+
+.titulo{
+	padding:30px;
+	text-align:center;
+	background: rgb(243,215,215);
+background: linear-gradient(0deg, rgba(243,215,215,0) 0%, rgba(200,75,75,0.5) 100%, rgba(255,255,255,0.5) 100%);
+}
+.titulo h1{
+	font-family: "Galindo", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 60px;
+	margin: 80px 0 80px 0;
+	color: #ffffff;
+}
+
+.info{
+	text-align: center;
+	background-color:#ffe6e6;
+	margin: 50px;
+	padding: 30px;
+	border: 2px solid #cd4141;
+	box-shadow: 8px 8px #cd4141;
+}
+
 
 footer{
-	background-color: #212036;
+	background-color: #4e664c;
 	padding: 50px;
 	text-align: center;
-	color:#9491c8; 
-	border-top: 30px solid #9491c8; 
+	color:#c1e6bd; 
+	border-top: 30px solid #c1e6bd; 
 }
 
 footer a{
-	color:#9491c8; 
+	color:#c1e6bd; 
 }
 
 footer a:hover{
