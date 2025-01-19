@@ -7,7 +7,7 @@
 }
 
 body{
-	background-color: #deddf2;
+	background-color: #212036;
 }
 
 header{
@@ -56,25 +56,190 @@ header ul li:hover{
 	font-size: 14px;
 }
 
+main{
+	border-top: 5px solid #9491c8;
+}
+
 .cv{
 	display:flex;
 	justify-content:center;
+	padding: 20px;
+	margin-left: 200px;
+	margin-right:200px;
+	background-color: #deddf2;
 }
 
-.parte1 article{
-	margin:20px;
+h1{
+	font-family: "Galindo", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 25px;
+	padding: 5px;
 }
 
-.parte2 article{  
+h2{
+	font-family: "Galindo", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 25px;
+	padding: 5px;
+}
+
+.parte1{
+	border-right: 2px solid #212036;
+	padding-right: 20px;
+}
+
+.parte1 section{
+	margin: 20px;
+}
+
+.parte1 h2{
+	text-align:right;
+	padding: 5px;
+	background: rgb(222,221,242);
+	background: linear-gradient(90deg, rgba(222,221,242,1) 0%, rgba(67,65,99,1) 40%);
+	color:#ffffff;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width:100%;
+}
+
+.parte1 h1{
+	text-align:right;
+	padding: 5px;
+	background: rgb(222,221,242);
+	background: linear-gradient(90deg, rgba(222,221,242,1) 0%, rgba(67,65,99,1) 40%);
+	color:#ffffff;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width:100%;
+}
+
+.parte1 section article{
+	background-color:#f9f7ff;
+	padding: 8px;
+	margin:10px;
+	border: 2px solid #9491c8;
+	border-radius: 20px;
+	box-shadow: 8px 8px #9491c8;
+}
+
+.parte1 section ul{
+	background-color:#f9f7ff;
+	padding: 8px;
+	margin:10px;
+	border: 2px solid #9491c8;
+	border-radius: 20px;
+	box-shadow: 8px 8px #9491c8;
+}
+
+.parte1 section ul li ul{
+	margin:10px;
+	border: 0;
+}
+
+.parte2 section{  
 	margin:20px;
+	padding: 20px;
+}
+
+.parte2 li img {
+      margin-right: 10px;
+      width:150px;
+      height: auto;
+	  border-right: 1px solid #9491c8;
+	  padding: 20px 0 20px 0;
+}
+
+.parte2 li{
+	display:flex;
+	margin: 50px;
+	background-color:#f9f7ff;
+	padding: 10px 0 10px 10px;
+	border: 2px solid #9491c8;
+	border-radius: 20px;
+	box-shadow: 8px 8px #9491c8;
+}
+
+.cole{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.parte2 h2{
+	padding: 5px;
+	background: rgb(67,65,99);
+	background: linear-gradient(90deg, rgba(67,65,99,1) 40%, rgba(222,221,242,1) 100%);
+	color:#ffffff;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.parte2 h3{
+	font-family: "Galindo", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 16px;
+	padding: 5px;
+	background: rgb(67,65,99);
+	background: linear-gradient(90deg, rgba(67,65,99,1) 40%, rgba(148,145,200,1) 100%);
+	color:#ffffff;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.ubicacion{
+	margin: 10px;
+}
+
+.portfolio{
+	text-align: center;
+	padding:20px 0 20px 0;
+	background: rgb(255,255,255);
+	background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(148,145,200,1) 100%);	
+}
+
+.portfolio h2{
+	background-color:#212036;
+	padding: 10px 0 10px 0;
+	color: #ffffff;
+	border:2px solid #9491c8;
+}
+
+.portfolio article{
+	display:flex;
+	justify-content: center;
+}
+
+.portfolio figure{
+	margin: 30px;
+	padding: 10px;
+	background-color:#f9f7ff;
+	border: 2px solid #9491c8;
+	box-shadow: 8px 8px #9491c8;
+}
+
+.portfolio figcaption{
+	margin-top: 20px;
+	padding: 10px;
+	background-color:#212036;
+	border:1px solid #212036;
+	border-radius: 5px;
+	color: #ffffff;
+}
+
+.portfolio img{
+	width:auto;
+    height: 300px;
 }
 
 footer{
+	border-top: 30px solid #9491c8;
 	background-color: #212036;
 	padding: 50px;
 	text-align: center;
 	color:#9491c8; 
-	border-top: 30px solid #9491c8; 
 }
 
 footer a{

@@ -56,6 +56,35 @@ header ul li:hover{
 	font-size: 14px;
 }
 
+main{
+	background: rgb(222,221,242);
+	background: linear-gradient(90deg, rgba(222,221,242,0.8) 0%, rgba(222,221,242,0.8) 40%);
+}
+
+.titulo{
+	padding:30px;
+	text-align:center;
+	background-image:url("fondocontacto.jpg");
+}
+.titulo h1{
+	font-family: "Galindo", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 60px;
+	margin: 80px 0 80px 0;
+	color: #212036;
+}
+
+.info{
+	text-align: center;
+	background-color:#f9f7ff;
+	margin: 100px;
+	padding: 30px;
+	border: 2px solid #9491c8;
+	border-radius: 20px;
+	box-shadow: 8px 8px #9491c8;
+}
+
 
 footer{
 	background-color: #212036;
