@@ -104,8 +104,7 @@ img{
 	margin: 100px;
 	padding: 30px 0 30px 0;
 	border: 2px  #9491c8;
-	border-radius: 20px;
-	box-shadow: 8px 8px #9491c8;
+	box-shadow: 10px 10px #9491c8;
 }
 
 .presentacion h2{
@@ -118,7 +117,7 @@ img{
 }
 
 .presentacion p{
-	margin: 0 100px 0 100px;
+	margin: 0 150px 0 150px;
 	color: #3f3361;
 	font-size: 18px;
 }
@@ -141,10 +140,13 @@ img{
 	margin: 35px;
 	padding: 20px 20px 20px 20px;
 	background-color: #212036;
-	color: #deddf2;
-	border: 2px #9491c8;
-	border-radius: 30px;
+	color: #deddf2;	
 	box-shadow: 8px 8px #9491c8;
+	transition: .3s;
+}
+
+.enlaces li:hover{
+	transform:scale(1.2);
 }
 
 .enlaces a{
@@ -153,17 +155,28 @@ img{
 	font-style: normal;
 	font-size: 25px;
 	border-bottom: 2px solid #212036;
-	border-radius:0px;
+	border-radius:0;
 	transition: .2s;
 }
 
 .en1{
-	transform:rotate(10deg);
+	transform:rotate(5deg);
+}
+
+.en2{
+	transform:rotate(-5deg);
+}
+
+.en3{
+	transform:rotate(5deg);
+}
+
+.en4{
+	transform:rotate(-5deg);
 }
 
 .enlaces a:hover{
 	border-bottom: 2px solid #9491c8;
-	font-size: 30px;
 }
 
 .enlaces p{
