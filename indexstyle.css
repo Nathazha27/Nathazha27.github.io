@@ -21,6 +21,10 @@ ul{
 a{
 	text-decoration: none;
 	color: #deddf2;
+	padding:10px;
+	border: 1px #deddf2;
+	border-radius: 10px;
+	transition: .3s ease;
 }
 	
 .menu {
@@ -51,9 +55,14 @@ header ul li{
 }
 
 header ul li:hover{
-	border: 2px solid #deddf2;
-	border-radius: 15px;
-	font-size: 14px;
+	transform:scale(0.9);
+}
+
+header a:hover{
+	color:#212036;
+	background-color: #deddf2;
+	transform:scale(0.9);
+	transition: .3s ease;
 }
 
 img{
@@ -94,7 +103,7 @@ img{
 	background-color:#f9f7ff;
 	margin: 100px;
 	padding: 30px 0 30px 0;
-	border: 2px solid #9491c8;
+	border: 2px  #9491c8;
 	border-radius: 20px;
 	box-shadow: 8px 8px #9491c8;
 }
@@ -116,6 +125,8 @@ img{
 
 .enlaces{
 	margin-bottom: 70px;
+	padding:50px 0 50px 0;
+	background-color:#f3f2fe;
 	border-top: 4px solid #ffffff;
 	border-bottom: 4px solid #ffffff;
 }
@@ -131,7 +142,7 @@ img{
 	padding: 20px 20px 20px 20px;
 	background-color: #212036;
 	color: #deddf2;
-	border: 2px solid #9491c8;
+	border: 2px #9491c8;
 	border-radius: 30px;
 	box-shadow: 8px 8px #9491c8;
 }
@@ -141,7 +152,13 @@ img{
 	font-weight: 500;
 	font-style: normal;
 	font-size: 25px;
+	border-bottom: 2px solid #212036;
+	border-radius:0px;
 	transition: .2s;
+}
+
+.en1{
+	transform:rotate(10deg);
 }
 
 .enlaces a:hover{
