@@ -10,6 +10,24 @@ body{
 	background-image:url("fondominecraft.jpg");
 }
 
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: left;
+        text-align: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    header ul li {
+        margin: 10px 0;
+    }
+}
+
 header{
 	background-color: #010018;
 	padding:0 20px 0 20px;
