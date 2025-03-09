@@ -7,7 +7,7 @@
 }
 
 body{
-	background-color: #212036;
+	background-color: #deddf2;
 }
 
 header{
@@ -21,8 +21,12 @@ ul{
 a{
 	text-decoration: none;
 	color: #deddf2;
+	padding:10px;
+	border: 1px #deddf2;
+	border-radius: 10px;
+	transition: .3s ease;
 }
-
+	
 .menu {
 	display: flex;
 	justify-content: space-between;
@@ -51,22 +55,26 @@ header ul li{
 }
 
 header ul li:hover{
-	border: 2px solid #deddf2;
-	border-radius: 15px;
-	font-size: 14px;
+	transform:scale(0.9);
 }
 
-main{
-	border-top: 5px solid #9491c8;
+header a:hover{
+	color:#212036;
+	background-color: #deddf2;
+	transform:scale(0.9);
+	transition: .3s ease;
+}
+
+main {
+	background-image:url("fondocontacto.jpg");
 }
 
 .cv{
 	display:flex;
 	justify-content:center;
 	padding: 20px;
-	margin-left: 200px;
-	margin-right:200px;
-	background-color: #deddf2;
+	background: rgb(254,255,208);
+background: linear-gradient(124deg, rgba(254,255,208,0.5) 0%, rgba(246,234,255,0.5) 36%, rgba(158,219,254,0.5) 100%);
 }
 
 h1{
@@ -86,57 +94,46 @@ h2{
 }
 
 .parte1{
-	border-right: 2px solid #212036;
 	padding-right: 20px;
 }
 
 .parte1 section{
-	margin: 20px;
+	margin: 50px;
 }
 
 .parte1 h2{
-	text-align:right;
-	padding: 5px;
-	background: rgb(222,221,242);
-	background: linear-gradient(90deg, rgba(222,221,242,1) 0%, rgba(67,65,99,1) 40%);
+		padding: 10px;
+	background: rgb(70,54,97);
+	background: linear-gradient(90deg, rgba(70,54,97,1) 0%, rgba(70,54,97,1) 43%, rgba(158,219,254,0) 84%);
 	color:#ffffff;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	width:100%;
 }
 
 .parte1 h1{
-	text-align:right;
-	padding: 5px;
-	background: rgb(222,221,242);
-	background: linear-gradient(90deg, rgba(222,221,242,1) 0%, rgba(67,65,99,1) 40%);
+	padding: 10px;
+	background: rgb(70,54,97);
+	background: linear-gradient(90deg, rgba(70,54,97,1) 0%, rgba(70,54,97,1) 43%, rgba(158,219,254,0) 84%);
 	color:#ffffff;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	width:100%;
 }
 
 .parte1 section article{
 	background-color:#f9f7ff;
 	padding: 8px;
 	margin:10px;
-	border: 2px solid #9491c8;
-	border-radius: 20px;
 	box-shadow: 8px 8px #9491c8;
+	border: 2px solid #9491c8;
 }
 
 .parte1 section ul{
 	background-color:#f9f7ff;
 	padding: 8px;
 	margin:10px;
-	border: 2px solid #9491c8;
-	border-radius: 20px;
 	box-shadow: 8px 8px #9491c8;
+	border: 2px solid #9491c8;
 }
 
 .parte1 section ul li ul{
 	margin:10px;
-	border: 0;
+	background-color:#f9f7ff;
 }
 
 .parte2 section{  
@@ -148,18 +145,17 @@ h2{
       margin-right: 10px;
       width:150px;
       height: auto;
-	  border-right: 1px solid #9491c8;
 	  padding: 20px 0 20px 0;
 }
 
 .parte2 li{
 	display:flex;
-	margin: 50px;
+	margin: 70px;
+	height: 100px;
 	background-color:#f9f7ff;
 	padding: 10px 0 10px 10px;
-	border: 2px solid #9491c8;
-	border-radius: 20px;
 	box-shadow: 8px 8px #9491c8;
+	border: 2px solid #9491c8;
 }
 
 .cole{
@@ -167,13 +163,11 @@ h2{
 	box-sizing: border-box;
 }
 
-.parte2 h2{
-	padding: 5px;
-	background: rgb(67,65,99);
-	background: linear-gradient(90deg, rgba(67,65,99,1) 40%, rgba(222,221,242,1) 100%);
+.parte2 h2{	
+	padding: 10px;
+	background: rgb(70,54,97);
+	background: linear-gradient(90deg, rgba(70,54,97,1) 0%, rgba(70,54,97,1) 43%, rgba(158,219,254,0) 84%);
 	color:#ffffff;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
 }
 
 .parte2 h3{
@@ -185,8 +179,6 @@ h2{
 	background: rgb(67,65,99);
 	background: linear-gradient(90deg, rgba(67,65,99,1) 40%, rgba(148,145,200,1) 100%);
 	color:#ffffff;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
 }
 
 .ubicacion{
@@ -198,6 +190,10 @@ h2{
 	padding:20px 0 20px 0;
 	background: rgb(255,255,255);
 	background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(148,145,200,1) 100%);	
+}
+
+.portfolio figure:hover{
+	transform:scale(1.1);
 }
 
 .portfolio h2{
@@ -216,8 +212,8 @@ h2{
 	margin: 30px;
 	padding: 10px;
 	background-color:#f9f7ff;
-	border: 2px solid #9491c8;
 	box-shadow: 8px 8px #9491c8;
+	transition:.3s;
 }
 
 .portfolio figcaption{

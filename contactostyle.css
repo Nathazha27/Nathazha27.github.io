@@ -7,7 +7,7 @@
 }
 
 body{
-	background-color: #ffffff;
+	background-color: #deddf2;
 }
 
 header{
@@ -21,6 +21,10 @@ ul{
 a{
 	text-decoration: none;
 	color: #deddf2;
+	padding:10px;
+	border: 1px #deddf2;
+	border-radius: 10px;
+	transition: .3s ease;
 }
 	
 .menu {
@@ -51,9 +55,14 @@ header ul li{
 }
 
 header ul li:hover{
-	border: 2px solid #deddf2;
-	border-radius: 15px;
-	font-size: 14px;
+	transform:scale(0.9);
+}
+
+header a:hover{
+	color:#212036;
+	background-color: #deddf2;
+	transform:scale(0.9);
+	transition: .3s ease;
 }
 
 main{
