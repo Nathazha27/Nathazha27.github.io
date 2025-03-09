@@ -11,7 +11,7 @@ body{
 }
 
 header{
-	background-color: #212036;
+	background-color: #010018;
 	padding:0 20px 0 20px;
 }
 
@@ -64,8 +64,123 @@ header a:hover{
 	text-shadow:0px 0px 10px #deddf2;
 }
 
+main{
+	background: rgb(2,0,36);
+	background: linear-gradient(0deg, rgba(2,0,36,1) 20%, rgba(2,0,36,0.5) 100%);
+	padding:10px 200px 50px 200px;
+}
+
+form{
+	border:1px;
+	border-radius:30px;
+	background: rgb(11,10,25);
+	background: linear-gradient(157deg, rgba(11,10,25,0.7063200280112045) 0%, rgba(11,10,25,0) 100%);
+}
+
+.titulo{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:50px 50px 0 0;
+	border-bottom: 5px solid transparent;
+	border-image: linear-gradient(to right, transparent, #deddf2, transparent);
+	border-image-slice: 1;
+}
+
+.titulo article{
+	border: 5px solid transparent;
+	border-image: linear-gradient(to right, transparent, #deddf2, transparent);
+	border-image-slice: 1;
+}
+
+.titulo img{
+	transition:.3s;
+}
+
+.titulo:hover h2{
+	transform:scale(1.2);
+	min-width:600px;
+}
+
+.titulo:hover img{
+	transform:rotate(10deg);
+}
+
+.titulo:hover .in1{
+	transform:rotate(115deg);
+}
+
+.titulo h2{
+	font-family: "Galindo", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 60px;
+	text-align:center;
+	color:#ffffff;
+	text-shadow:0px 0px 10px #deddf2;
+	transition:.3s;
+	min-width:300px;
+}
+
+.in1{
+	transform:rotate(125deg);
+}
+
+.input{
+	text-align:center;
+	color:#ffffff;
+	text-shadow:0px 0px 10px #deddf2;
+	padding:50px;
+}
+
+.input:hover h4{
+	transform:scale(1.1);
+}
+
+h4{
+	font-size:30px;
+	margin:10px;
+	transition:.3s;
+}
+
+.input p{
+	font-size:20px;
+	margin:10px;
+}
+
+h3{
+	font-family: "Galindo", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 30px;
+	text-align:center;
+	color:#ffffff;
+	text-shadow:0px 0px 10px #deddf2;
+	transition:.3s;
+	min-width:300px;
+}
+
+input{
+	padding:5px 10px 5px 10px;
+	border:2px solid transparent;
+	border-radius:20px;
+	box-shadow:0px 0px 10px #deddf2;
+	font-size:20px;
+}
+
+.respuesta{
+	background: rgb(11,10,25);
+	background: linear-gradient(157deg, rgba(11,10,25,0.7063200280112045) 0%, rgba(11,10,25,0) 100%);
+	color:#ffffff;
+	transition:.3s;
+}
+
+.respuesta:hover{
+	transform:scale(1.1);
+}
+
 footer{
-	background-color: #212036;
+	background-color: #010018;
 	padding: 50px;
 	text-align: center;
 	color:#9491c8; 

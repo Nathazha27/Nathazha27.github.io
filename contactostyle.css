@@ -7,11 +7,11 @@
 }
 
 body{
-	background-image:url("fondominecraft.jpg");
+	background-image:url("fondocontacto.jpg");
 }
 
 header{
-	background-color: #212036;
+	background-color: #010018;
 	padding:0 20px 0 20px;
 }
 
@@ -64,10 +64,6 @@ header a:hover{
 	text-shadow:0px 0px 10px #deddf2;
 }
 
-main{
-	background-image:url("fondocontacto.jpg");
-}
-
 .formulario	{
 	display:flex;
 	justify-content:center;
@@ -76,19 +72,28 @@ main{
 }
 
 .formulario form{
-	margin: 50px 0 50px 0;
-	background-color:#deddf2;
-	border: 2px solid #9491c8;
+	margin: 50px 0 50px 0;	
+	background: rgb(11,10,25);
+	background: linear-gradient(157deg, rgba(11,10,25,0.7063200280112045) 0%, rgba(11,10,25,0) 100%);
+	border: 1px solid transparent;
 	border-radius: 30px;
-	box-shadow: 8px 8px #9491c8;
 }
 
 .formulario input{
 	width:100%;
 }
 
+.formulario ul li{
+	transition:.3s;
+}
+
+.formulario ul li:hover{
+	transform:scale(1.1);
+}
+
 .formulario h1{
-	color: #deddf2;
+	color: #ffffff;
+	text-shadow:0 0 5px #deddf2;
 	margin-top: 30px;
 	padding: 10px;
 	font-family: "Galindo", serif;
@@ -96,8 +101,8 @@ main{
 	font-style: normal;
 	font-size: 25px;
 	text-align: center;
-	background: rgb(148,145,200);
-	background: linear-gradient(100deg, rgba(148,145,200,1) 0%, rgba(90,87,133,1) 20%, rgba(70,68,109,1) 50%, rgba(90,87,133,1) 80%, rgba(148,145,200,1) 100%);
+	background: rgb(11,10,25);
+	background: linear-gradient(157deg, rgba(11,10,25,0.7063200280112045) 0%, rgba(11,10,25,0) 100%);
 }
 
 .formulario article{
@@ -107,7 +112,8 @@ main{
 .formulario p{
 	margin: 20px;
 	padding: 5px;
-	color:#404a57;
+	color: #ffffff;
+	text-shadow:0 0 5px #deddf2;
 	border-bottom: 2px solid #ffffff;
 }
 
@@ -118,14 +124,7 @@ textarea{
 }
 
 footer{
-	background-color: #212036;
-	padding: 50px;
-	text-align: center;
-	color:#9491c8; 
-}
-
-footer{
-	background-color: #212036;
+	background-color: #010018;
 	padding: 50px;
 	text-align: center;
 	color:#9491c8; 

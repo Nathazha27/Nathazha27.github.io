@@ -11,7 +11,7 @@ body{
 }
 
 header{
-	background-color: #212036;
+	background-color: #010018;
 	padding:0 20px 0 20px;
 }
 
@@ -64,8 +64,8 @@ header a:hover{
 	text-shadow:0px 0px 10px #deddf2;
 }
 main{
-	background: rgb(11,10,25);
-	background: linear-gradient(0deg, rgba(11,10,25,1) 37%, rgba(11,10,25,0.5) 100%);
+	background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 37%, rgba(2,0,36,0.5) 100%);
 }
 .parte1{
 	padding: 20px 100px 0 100px;
@@ -74,6 +74,7 @@ main{
 .prese {
 	display:flex;
 	justify-content:center;
+	align-items:center;
 	padding: 100px 100px 150px 100px;
 	background: rgb(11,10,25);
 	background: linear-gradient(270deg, rgba(11,10,25,0.2) 0%, rgba(11,10,25,0.2) 100%);
@@ -89,7 +90,13 @@ img {
 	box-shadow:0px 0px 20px #deddf2;
 	background: rgb(11,10,25);
 	background: linear-gradient(270deg, rgba(11,10,25,0.2) 0%, rgba(11,10,25,0.2) 100%);
+	transition:.3s;
 }	
+
+img:hover{
+	transform:scale(1.1);
+}
+
 .presentacion {
 	padding:50px 75px 50px 75px;
 	color: #ffffff;	
@@ -169,7 +176,7 @@ img {
 	border-radius:50px;
 	box-shadow: 5px 5px #c1c0e3;
 	background: rgb(89,88,111);
-background: linear-gradient(157deg, rgba(89,88,111,0.7063200280112045) 0%, rgba(0,0,0,0) 100%);
+	background: linear-gradient(157deg, rgba(89,88,111,0.7063200280112045) 0%, rgba(0,0,0,0) 100%);
 }
 
 .enlaces li:hover{
@@ -194,7 +201,7 @@ background: linear-gradient(157deg, rgba(89,88,111,0.7063200280112045) 0%, rgba(
 }
 
 footer{
-	background-color: #212036;
+	background-color: #010018;
 	padding: 50px;
 	text-align: center;
 	color:#9491c8; 

@@ -9,51 +9,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	
 	<link rel="stylesheet" href="juegostyle.css">
-	<!--link rel="stylesheet" href="juegonavidad.css"-->
 		
-	<script>
-let num_max = 100;
-let num_min = 1;
-	
-let numero_random = Math.floor(Math.random()*num_max)+num_min;
-
-console.log("El número a adivinar es: "+numero_random);
-
-let info = "Introduce un número entre el 1 y el 100 para adivinar el número";
-	
-function check_number ()
-{
-	//console.log("Número!!!");
-	
-	let valor = document.getElementById("juego_numero").value;
-	
-	let resultado = document.getElementById("resultado");
-	
-	if (valor < num_min) {
-	resultado.value = "El número debe ser 1 o mayor";
-	return;
-	}
-	else if (valor > num_max) {
-	resultado.value = "El número debe ser 100 o menor";
-	return;
-	}
-	
-	let text = " ";
-	
-	if (valor > numero_random) {
-	text = "El número a adivinar es menor a "+valor;
-	}
-	else if (valor < numero_random){
-	text = "El número a adivinar es mayor a "+valor;
-	}
-	else {
-	text = "Has acertado!!";
-	}
-	
-	console.log(text);
-	resultado.value = text;
-}
-	</script>
+	<script src="game.js"></script>
 	</head>
 	
 	<body>
@@ -75,13 +32,21 @@ function check_number ()
 	</header>
 	
 	<main>
-		<h2>Mi juego</h2>
 		<form>
-			<h3>Adivina el número</h3>
-			<p id="info">Introduce un número entre el 1 y el 100 para adivinar el número</p>
-			<p>Número: <input type="number" id="juego_numero" name="numero"/></p>
-			<p><output id="resultado">Introduce el número en el campo de texto</output></p>
-			<p><input type="button" value="Adivina" onClick="check_number();"/></p>
+			<section class="titulo">
+				<p><img a src="interrogacion.png" class="in1"/></p>
+				<article>
+					<h2>ADIVINA</h2><h2>EL NÚMERO</h2>
+				</article>
+				<p><img a src="interrogacion.png" /></p>
+			</section>
+			<section class="input">
+				<h3 id="info">Introduce un número entre el 1 y el 100 para adivinar el número</h3>
+				<h4>Número: <input type="number" id="juego_numero" name="numero"/></h4>
+				<p><output id="resultado">Introduce el número en el campo de texto</output></p>
+				<p><input type="button" value="Adivina" onClick="check_number();" class="respuesta"/></p>
+				<p><output id="contador">0</output></p>
+			</section>
 		</form>
 	</main>
 	
@@ -107,10 +72,6 @@ function check_number ()
 		
 		<p>Copyright(C) 2024-2025</p>
 	</footer>
-	
-	<script>
-document.getElementById("info").innerHTML = info;
-	</script>
 	
 	</body>
 </html>

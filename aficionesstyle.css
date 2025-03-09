@@ -11,7 +11,7 @@ body{
 }
 
 header{
-	background-color: #212036;
+	background-color: #010018;
 	padding:0 20px 0 20px;
 }
 
@@ -65,37 +65,112 @@ header a:hover{
 }
 
 main{
-	background: rgb(222,221,242);
-	background: linear-gradient(90deg, rgba(222,221,242,0.8) 0%, rgba(222,221,242,0.8) 40%);
+	background: rgb(2,0,36);
+	background: linear-gradient(0deg, rgba(2,0,36,1) 70%, rgba(2,0,36,0.5) 100%);
+	padding:10px 200px 50px 200px;
 }
 
-.titulo{
-	padding:30px;
-	text-align:center;
-	background-image:url("fondocontacto.jpg");
-}
-.titulo h1{
+main h1{
 	font-family: "Galindo", serif;
 	font-weight: 500;
 	font-style: normal;
 	font-size: 60px;
-	margin: 80px 0 80px 0;
-	color: #212036;
-}
-
-.info{
+	text-shadow:0px 0px 10px #deddf2;
 	text-align: center;
-	background-color:#f9f7ff;
-	margin: 100px;
-	padding: 30px;
-	border: 2px solid #9491c8;
-	border-radius: 20px;
-	box-shadow: 8px 8px #9491c8;
+	font-size:70px;
+	margin: 50px 100px 0 100px;
+	padding: 30px 100px 30px 100px;
+	color: #ffffff;	
+	text-shadow:0px 0px 10px #deddf2;
+	border: 2px solid transparent;
+	border-image: linear-gradient(to right, #deddf2, transparent);
+	border-image-slice: 1;
 }
 
+.aficiones{
+	display:grid;
+	justify-content:center;
+	padding:50px;
+}
+
+.aficiones img{
+	box-shadow:0 0 10px #deddf2;
+	border-radius:300px;
+	transition:.3s;
+	border:2px solid #deddf2;
+}
+
+.afi article{
+	padding:50px 100px 50px 100px;
+	color: #ffffff;	
+	text-shadow:0px 0px 10px #deddf2;
+}
+
+.afi{
+	display:flex;
+	align-items:center;
+	border-bottom: 2px solid transparent;
+	border-image: linear-gradient(to right, #deddf2, transparent);
+	border-image-slice: 1;
+	padding:20px;
+}
+
+.aficiones img:hover{
+	transform:scale(1.1);
+}
+
+.afi h2{
+	font-family: "Galindo", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 30px;
+}
+
+.afi p{
+	margin:30px;
+}
+
+.videojuegos{
+	display:grid;
+	justify-content:center;
+	text-align:center;
+	padding:50px 100px 50px 100px;
+	color: #ffffff;	
+	text-shadow:0px 0px 10px #deddf2;
+	border:2px solid transparent;
+	border-radius:50px;
+	box-shadow: 5px 5px #c1c0e3;
+	background: rgb(89,88,111);
+	background: linear-gradient(157deg, rgba(89,88,111,0.7063200280112045) 0%, rgba(0,0,0,0) 100%);
+}
+
+.videojuegos h2{
+	font-family: "Galindo", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 50px;
+	margin-bottom:50px;
+}
+
+.videojuegos article{
+	display:flex;
+}
+
+.videojuegos img{
+	box-shadow:5px 5px #deddf2;
+	border-radius:300px;
+	margin:0 50px 0 50px;
+	transition:.3s;
+	background: rgb(11,10,25);
+	background: linear-gradient(157deg, rgba(11,10,25,0.7063200280112045) 0%, rgba(11,10,25,0) 100%);
+}
+
+.videojuegos img:hover{
+	transform:scale(1.1);
+}
 
 footer{
-	background-color: #212036;
+	background-color: #010018; 
 	padding: 50px;
 	text-align: center;
 	color:#9491c8; 

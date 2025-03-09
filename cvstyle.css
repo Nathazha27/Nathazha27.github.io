@@ -11,7 +11,7 @@ body{
 }
 
 header{
-	background-color: #212036;
+	background-color: #010018;
 	padding:0 20px 0 20px;
 }
 
@@ -65,8 +65,8 @@ header a:hover{
 }
 
 main{
-	background: rgb(11,10,25);
-	background: linear-gradient(0deg, rgba(11,10,25,1) 45%, rgba(11,10,25,0.5) 100%);
+	background: rgb(2,0,36);
+	background: linear-gradient(0deg, rgba(2,0,36,1) 45%, rgba(2,0,36,0.5) 100%);
 	padding:10px 200px 50px 200px;
 }
 
@@ -261,7 +261,7 @@ background: linear-gradient(157deg, rgba(89,88,111,0.7063200280112045) 0%, rgba(
 }
 
 footer{
-	background-color: #212036;
+	background-color: #010018;
 	padding: 50px;
 	text-align: center;
 	color:#9491c8; 
