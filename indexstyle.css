@@ -65,7 +65,7 @@ header a:hover{
 }
 main{
 	background: rgb(11,10,25);
-background: linear-gradient(0deg, rgba(11,10,25,1) 37%, rgba(11,10,25,0.7) 100%);
+	background: linear-gradient(0deg, rgba(11,10,25,1) 37%, rgba(11,10,25,0.5) 100%);
 }
 .parte1{
 	padding: 20px 100px 0 100px;
