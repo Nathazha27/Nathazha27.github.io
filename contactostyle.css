@@ -7,21 +7,22 @@
 }
 
 body{
-	background-color: #deddf2;
+	background-image:url("fondominecraft.jpg");
 }
 
 header{
 	background-color: #212036;
+	padding:0 20px 0 20px;
 }
 
 ul{
 	list-style: none;
+	padding-right: 10px;
 }
 
 a{
 	text-decoration: none;
-	color: #deddf2;
-	padding:10px;
+	color: #ffffff;
 	border: 1px #deddf2;
 	border-radius: 10px;
 	transition: .3s ease;
@@ -30,8 +31,7 @@ a{
 .menu {
 	display: flex;
 	justify-content: space-between;
-	color: #deddf2;
-	padding: 10px 30px 10px 30px;
+	color: #ffffff;
 }
 
 header h1{
@@ -39,7 +39,7 @@ header h1{
 	font-weight: 500;
 	font-style: normal;
 	font-size: 30px;
-	margin-top: 13px;
+	margin-top: 13px;	
 }
 
 header ul{
@@ -59,10 +59,9 @@ header ul li:hover{
 }
 
 header a:hover{
-	color:#212036;
-	background-color: #deddf2;
 	transform:scale(0.9);
 	transition: .3s ease;
+	text-shadow:0px 0px 10px #deddf2;
 }
 
 main{
@@ -116,6 +115,13 @@ textarea{
 	resize:none;
 	width: 100%;
     min-height: 100px;
+}
+
+footer{
+	background-color: #212036;
+	padding: 50px;
+	text-align: center;
+	color:#9491c8; 
 }
 
 footer{

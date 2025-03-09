@@ -167,7 +167,9 @@ img {
 	height:50px;
 	border:2px solid transparent;
 	border-radius:50px;
-	box-shadow: 5px 5px 5px #c1c0e3;
+	box-shadow: 5px 5px #c1c0e3;
+	background: rgb(89,88,111);
+background: linear-gradient(157deg, rgba(89,88,111,0.7063200280112045) 0%, rgba(0,0,0,0) 100%);
 }
 
 .enlaces li:hover{
