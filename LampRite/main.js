@@ -1,10 +1,31 @@
-// Reducción del header al scroll
+/* ========================================================
+   1. CONTROL DE SCROLL INICIAL (Evitar saltos extraños)
+   ======================================================== */
+// Desactiva la memoria de scroll del navegador al recargar (La forma moderna y limpia)
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+// Asegura que, una vez carguen los iframes y recursos, la página empiece arriba del todo
+window.addEventListener('load', function() {
+    window.scrollTo(0, 0);
+});
+
+/* ========================================================
+   2. ANIMACIÓN DEL HEADER AL HACER SCROLL
+   ======================================================== */
 const header = document.getElementById('header');
+
 window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
-    const newHeight = Math.max(50, 100 - scrollY / 10); // Mínimo 50vh
+    // Calcula la nueva altura (empieza en 100vh y se reduce hasta un mínimo de 50vh)
+    const newHeight = Math.max(50, 100 - scrollY / 10); 
     header.style.height = newHeight + 'vh';
 });
+
+/* ========================================================
+   3. AQUÍ PUEDES PONER EL RESTO DE TU CÓDIGO JS...
+   ======================================================== */
 
 // Cursor reveal en el body
 const main = document.getElementById('main');
