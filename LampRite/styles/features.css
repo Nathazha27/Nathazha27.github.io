@@ -1,0 +1,44 @@
+/* ==========================================
+   FEATURES GRID & CARDS
+   ========================================== */
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.feature {
+    padding: 5px;
+    border: 50px solid transparent;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, .05);
+    background-origin: border-box;
+    background-clip: border-box;
+    border-image-source: url('../Resources/Img/Marco_4.webp');
+    border-image-slice: 256 256 256 256;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.feature:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.05) translateY(-5px);
+    backdrop-filter: blur(5px);
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.feature p {
+    font-family: 'Brawler', serif;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #ccc;
+}

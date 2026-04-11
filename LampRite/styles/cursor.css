@@ -1,0 +1,19 @@
+
+
+* {
+    cursor: none;
+}
+.main-page-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 7vh;
+    height: 7vh;
+    background-image: url(../Resources/Img/PointerDefault.png);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 10000;
+}

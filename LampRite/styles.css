@@ -1,0 +1,407 @@
+/* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Header */
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    
+}
+
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Resources/Img/bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('Resources/Img/logo.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+    z-index: 2;}
+
+/* Main */
+main {
+    position: relative;
+    min-height: 100vh;
+    background-color: #001122; /* Azul marino */
+    overflow: hidden;
+}
+
+.content-separator-beam {
+    position: relative;
+    margin-top: -10px;;
+    left: 0;
+    width: 100%;
+    height: 65px; /* Grosor del rayo */
+    /* background: linear-gradient(90deg, transparent, #4ecdc4, transparent); */
+    background-image: url('Resources/Img/beamTiles.webp');
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    animation: beamAnimation 2s infinite;
+    z-index: 6;
+}
+
+.texture-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Resources/Img/wallpaperBase.webp');
+    background-size: 30%;
+    background-repeat: repeat;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.stucco-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Resources/Img/stuccoSeamless.webp');
+    background-size: 20%;
+    background-repeat: repeat;
+    background-blend-mode:color-burn;
+    opacity: .1;
+    z-index: 5;
+    pointer-events: none;
+}
+.radial-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 1) 100%);
+    z-index: 5;
+    pointer-events: none;
+}
+.reveal-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Resources/Img/wallpaperBaseReveal.webp');
+    background-color: rgba(0, 100, 255, 0.7);
+    background-size: 30%;
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+    mask-image: radial-gradient(circle, black 5%, transparent 70%);
+    mask-size: 300px 300px; /* Tamaño de la máscara */
+    mask-repeat: no-repeat;
+    mask-position: center;
+    z-index: 2;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease;
+}
+
+
+/* Capa de contenido revelado por la máscara */
+.reveal-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mask-image: radial-gradient(circle, black 0%, transparent 70%);
+    mask-size: 300px 300px; /* Debe coincidir con .reveal-layer */
+    mask-repeat: no-repeat;
+    mask-position: center;
+    z-index: 7;
+    pointer-events: auto;
+}
+
+.light-details-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.589) 0%, rgba(200, 230, 255, 0.384) 30%, transparent 90%);
+    mask-image: radial-gradient(circle, black 10%, transparent 60%);
+    mask-size: 250px 250px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    z-index: 8;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.sliced-button {
+    position: relative;
+    border: 20px solid transparent; 
+    border-image-source: url('Resources/Img/Button2.webp');
+    background-clip:content-box;
+    z-index: 7;
+    border-image-slice: 28 54 28 49 fill;
+    border-image-width: 50px 20px 50px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    /* border-image-repeat: stretch stretch; */
+}
+
+.line-type-1{
+    display: block; /* Asegura que se comporte como un bloque */
+    position: relative;
+    /* CAMBIA ESTA URL POR UNA REAL DE INTERNET */
+    background-image: url(Resources/Img/line_01.webp);
+    background-size: contain; /* 'contain' es mejor para líneas, 'cover' puede cortarla */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 60px; /* Dale suficiente altura para que se vea */
+    margin: -50px 0px 50px 0px; /* Espaciado arriba y abajo */
+    z-index: 7;
+}
+
+.content {
+    position: relative;
+    z-index: 5;
+    padding: 40px 20px; /* Reducido de 100px */
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 3em;
+    margin-bottom: 15px; /* Reducido de 20px */
+}
+
+.content p {
+    font-family: 'Brawler', serif;
+    font-size: 1.2em;
+}
+
+/* Nuevas secciones centradas */
+.game-description,
+.key-features,
+.video-section,
+.press-kit,
+.release-date {
+    position: relative;
+    z-index: 7; /* Encima de la máscara */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px; /* Reducido de 80px */
+    text-align: center;
+}
+
+.game-description h2,
+.key-features h2,
+.video-section h2,
+.press-kit h2,
+.release-date h2 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: lighter;
+    font-size: 2.5em;
+    margin-bottom: 20px; /* Reducido de 40px */
+    color: #fff;
+    z-index: 7;
+}
+
+.game-description p {
+    font-family: 'Brawler', serif;
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 15px; /* Reducido de 20px */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Key Features */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px; /* Reducido de 40px */
+}
+
+.feature {
+    padding: 5px; /* Reducido de 30px */
+    /* border-radius: 10px; */
+    border: 50px solid transparent;
+    /*Blur:*/ 
+    background-color: rgba(255, 255, 255, .05);
+    border-image-source: url('Resources/Img/Marco_4.webp');
+    border-image-slice: 256 256 256 256;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px; /* Reducido de 15px */
+    color: #fff;
+}
+
+.feature p {
+    font-family: 'Brawler', serif;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Video Section */
+.video-section video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Press Kit */
+.btn-download {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.btn-download:hover {
+    transform: translateY(-2px);
+}
+
+/* Release Date */
+.release-date time {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4ecdc4;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 20px 0; /* Reducido de 40px */
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content div {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px; /* Reducido de 20px */
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-content p {
+    color: #ccc;
+}
+
+#hand-mark-1, #hand-mark-2, #hand-mark-3, #hand-mark-4, #blood-mark-1{
+    position: absolute; /* Aplica un tinte rojo */
+    opacity: 1; 
+    z-index: 4;
+    filter: drop-shadow(0 0 10px rgba(0, 225, 255, 0.664));
+}
+
+#hand-mark-1{
+    top: 10%;
+    left: 10%;
+    width: 20%;
+    height: 20%;
+    rotate: 45deg;
+    background-image: url('Resources/Img/Hands_1.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#hand-mark-2{
+    top: 20%;
+    left: 70%;
+    width: 25%;
+    height: 25%;
+    rotate: -30deg;
+    /* background-color: rgb(63, 11, 11); */
+    background-image: url('Resources/Img/Hands_2.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#hand-mark-3{
+    top: 50%;
+    left: 20%;
+    width: 15%;
+    height: 15%;
+    rotate: 15deg;
+    /* background-color: rgb(95, 0, 0); */
+    background-image: url('Resources/Img/Hands_3.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#hand-mark-4{
+    top: 60%;
+    left: 60%;
+    width: 15%;
+    height: 15%;
+    rotate: -20deg;
+    /* background-color: rgb(63, 11, 11); */
+    background-image: url('Resources/Img/Hands_4.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#blood-mark-1{
+    top: 30%;
+    left: 50%;
+    width: 10%;
+    height: 10%;
+    rotate: 0deg;
+    /* background-color: rgb(120, 0, 0); */
+    background-image: url('Resources/Img/Blood_1.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+

@@ -1,0 +1,99 @@
+/* =========================================
+   CONTENEDOR PRINCIPAL
+   ========================================= */
+.slider {
+    position: relative; /* Fundamental para que funcione el z-index */
+    z-index: 20;
+    display: flex; /* Coloca los dos tracks uno al lado del otro */
+    overflow: hidden; 
+    background: rgba(13, 19, 41, 0.164);
+    padding: 20px 0;
+    container-type: inline-size; /* Activa la magia de las medidas 'cqi' */
+}
+
+/* =========================================
+   PISTA DE ANIMACIÓN
+   ========================================= */
+.slider-track {
+    display: flex;
+    flex-shrink: 0;
+    width: max-content; /* Se adapta automáticamente a la cantidad de fotos */
+    animation: scroll-infinito 40s linear infinite;
+}
+
+/* Pausar al pasar el ratón (descomenta si lo necesitas) */
+/* .slider:hover .slider-track { animation-play-state: paused; } */
+
+/* =========================================
+   CADA ELEMENTO (SLIDE)
+   ========================================= */
+.slide {
+    width: calc(100cqi / 4); /* Por defecto: 4 fotos en PC */
+    flex-shrink: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: relative; 
+    transform: translateY(-10px); /* Flotación inicial hacia arriba */
+    transition: transform 0.3s ease; /* Movimiento suave */
+}
+
+/* Efecto hover en la caja completa */
+.slide:hover {
+    transform: translateY(-25px) scale(1.05); /* Sube más y se hace un 5% más grande */
+}
+
+/* =========================================
+   LAS IMÁGENES DENTRO DEL SLIDE
+   ========================================= */
+.slide img {
+    width: 100%; /* ¡ESTO EVITA QUE SE VEAN ENORMES! */
+    height: auto;
+    display: block; /* Elimina márgenes fantasma */
+    border-radius: 0px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra base */
+    transition: box-shadow 0.3s ease; /* Transición suave de la sombra */
+}
+
+/* La sombra crece y se hace más oscura al hacer hover en el slide */
+.slide:hover img {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 1); 
+}
+
+/* =========================================
+   ANIMACIÓN INFINITA
+   ========================================= */
+@keyframes scroll-infinito {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+/* =========================================
+   RESPONSIVE (MEDIA QUERIES)
+   ========================================= */
+
+/* Tablets (menor a 1024px): Mostramos 3 fotos */
+@media (max-width: 1024px) {
+    .slide {
+        width: calc(100cqi / 3);
+    }
+}
+
+/* Móviles (menor a 768px): Mostramos 2 fotos */
+@media (max-width: 768px) {
+    .slide {
+        width: calc(100cqi / 2);
+    }
+}
+
+/* Móviles pequeños (menor a 480px) */
+@media (max-width: 480px) {
+    .slide {
+        /* Si ves que ocupan mucho, cambia el 1.5 por un 2 o 2.5 */
+        width: calc(100cqi / 1.5); 
+        padding: 0 10px; /* Reducimos el espacio lateral en móviles */
+    }
+}

@@ -1,0 +1,69 @@
+/* ==========================================
+   DECORATIVE ELEMENTS (Marks, Scratches, etc)
+   ========================================== */
+
+#hand-mark-1,
+#hand-mark-2,
+#hand-mark-3,
+#hand-mark-4,
+#blood-mark-1 {
+    position: absolute;
+    opacity: 1;
+    z-index: 4;
+    filter: drop-shadow(0 0 10px rgba(0, 225, 255, 0.664));
+}
+
+#hand-mark-1 {
+    top: 10%;
+    left: 10%;
+    width: 20%;
+    height: 20%;
+    rotate: 45deg;
+    background-image: url('../Resources/Img/Hands_1.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#hand-mark-2 {
+    top: 20%;
+    left: 70%;
+    width: 25%;
+    height: 25%;
+    rotate: -30deg;
+    background-image: url('../Resources/Img/Hands_2.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#hand-mark-3 {
+    top: 50%;
+    left: 20%;
+    width: 15%;
+    height: 15%;
+    rotate: 15deg;
+    background-image: url('../Resources/Img/Hands_3.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#hand-mark-4 {
+    top: 60%;
+    left: 60%;
+    width: 15%;
+    height: 15%;
+    rotate: -20deg;
+    background-image: url('../Resources/Img/Hands_4.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#blood-mark-1 {
+    top: 30%;
+    left: 50%;
+    width: 10%;
+    height: 10%;
+    rotate: 0deg;
+    background-image: url('../Resources/Img/Blood_1.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
