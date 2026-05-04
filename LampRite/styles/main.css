@@ -17,6 +17,16 @@ main {
     overflow: hidden;
 }
 
+a {
+    color: #f8ffd6; /* Azul claro */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff; /* Blanco */
+}
+
 .content-separator-beam {
     position: relative;
     margin-top: -10px;
